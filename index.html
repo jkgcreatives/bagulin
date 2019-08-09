@@ -74,9 +74,43 @@
 			    <!-- <div class="carousel-item active">
 			      <img class="d-block w-100" src="img/2.jfif" alt="Second slide">
 			    </div> -->
-			    <div class="carousel-item active">
-			      <img class="d-block w-100" src="img/3.jfif" alt="Third slide">
+			    
+				<div class="carousel-item active ">
+			      <img class="w-100" src="img/1.jpg">			     
 			    </div>
+
+
+				<div class="carousel-item ">
+			      <img class="w-100" src="img/2.jpg">			     
+			    </div>
+
+
+				<div class="carousel-item ">
+			      <img class="w-100" src="img/3.jpg">			     
+			    </div>
+
+
+				<div class="carousel-item ">
+			      <img class="w-100" src="img/4.jpg">			     
+			    </div>
+
+
+				<div class="carousel-item ">
+			      <img class="w-100" src="img/5.jpg">			     
+			    </div>
+
+
+				<div class="carousel-item ">
+			      <img class="w-100" src="img/6.jpg">			     
+			    </div>
+
+			    <!-- <div class="carousel-item active ">
+			      <img class="w-100" src="img/3.jfif" alt="Third slide">
+    			  <div class="position-absolute w-100 h-100">	
+					<p class="position-absolute mt-1 mr-2">its name “Bagulin” was a coined from the word “Bago” and “Ulin.” it is said that during the early days, an igorot named Bago wanted to find out what the bluish crystal part of the earth that he saw from the uplands was. one day, he walked out towards the west and upon reaching the shores of the china sea, he found out that it was a body of salty water.</p>
+			      </div>
+			    </div>-->
+
 			  </div>
 			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -106,7 +140,7 @@
 						</div>
 						<div class="col-4">
 							<img class="rounded-circle d-block mx-auto" src="http://3rdpartyservicesofflorida.com/wp-content/uploads/2015/03/blank-profile.jpg" width="100">
-							<h6 class="text-center mt-2 mb-0">Counselor</h6>
+							<h6 class="text-center mt-2 mb-0">Councilor</h6>
 						</div>
 					</div>
 				</div>
@@ -144,17 +178,17 @@
 			<div class="card pt-3 text-center">	
 			<ul class="nav nav-pills" id="pills-tab" role="tablist">
 			  <li class="nav-item">
-			    <a class="nav-link active text-white mb-0 h6" id="launion" data-toggle="pill" href="#pills-launion" role="tab" aria-controls="pills-home" aria-selected="true">La Union Hymn</a>
+			    <a class="nav-link text-white mb-0 h6 active show" id="launion" data-toggle="pill" href="#pills-launion" role="tab" aria-controls="pills-home" aria-selected="true">La Union Hymn</a>
 			  </li>
 			  <li class="nav-item">
 			    <a class="nav-link text-white mb-0 h6" id="bagulin" data-toggle="pill" href="#pills-bagulin" role="tab" aria-controls="pills-profile" aria-selected="false">Bagulin Hymn</a>
 			  </li>
 			</ul>
 			<div class="tab-content" id="pills-tabContent">
-			  <div class="tab-pane fade show active p-4" id="pills-launion" role="tabpanel" aria-labelledby="pills-launion-tab">
+			  <div class="tab-pane fade p-4 active show" id="pills-launion" role="tabpanel" aria-labelledby="pills-launion-tab">
 					<div class="col-lg-6 mx-auto">	
 						<h3 class="mb-3 font-weight-bold">La Union Hymn</h3>
-						<audio controls class="my-4 adp" id="one">
+						<audio controls="" class="my-4 adp" id="one">
 						  <source src="mp3/launion.mp3" type="audio/mpeg">
 						</audio>
 						<br>				
@@ -185,7 +219,7 @@
 			  <div class="tab-pane fade p-4" id="pills-bagulin" role="tabpanel" aria-labelledby="pills-bagulin-tab">
 			  	<div class="col-lg-6 mx-auto">	
 			  		<h3 class="mb-3 font-weight-bold">Bagulin Hymn</h3>
-					<audio controls class="my-4" id="two">
+					<audio controls="" class="my-4" id="two">
 					  <source src="mp3/bagulin.mp3" type="audio/mpeg">
 					</audio>
 						<br>
@@ -243,7 +277,7 @@
 				<div class="bg-light mt-3">
 					<h6 class="p-2 bg-dark text-white text-center mb-0">Quick Facts</h6>
 					<div id="facts">
-						<div class="p-5 text-center show">
+						<div class="p-5 text-center" style="display: none;">
 							<h5>Land Area</h5>
 							<h6>10,733 hectares</h6>
 						</div>
@@ -255,7 +289,7 @@
 							<h5>Number of Barangays</h5>
 							<h6>10 barangays</h6>
 						</div>
-						<div class="p-5 text-center" style="display: none;">
+						<div class="p-5 text-center show" style="">
 							<h5>Classification</h5>
 							<h6>5th class</h6>
 						</div>
@@ -266,6 +300,26 @@
 		</div><!--Right-->
 	</div>
 </div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	$('#bagulin,#launion').click(function(){
+		$('audio').trigger('pause');
+	});
+	$('#facts').ready(function() {
+		setInterval(function() {
+			index = $('#facts').find('.show').index();
+
+			$('#facts .show').fadeOut(function() {
+				$('#facts div').eq( (index + 1) % $('#facts>div').length ).fadeIn().addClass('show');
+			}).removeClass('show');
+			
+		}, 3000);
+	});
+</script>
+
+</body>
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>

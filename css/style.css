@@ -28,6 +28,21 @@
 }
 
 
+.carousel-item {
+	top:0;
+	left:0;
+	background-color: rgba(0,0,0,0.4);
+}
+.carousel-item p {
+	color: white;
+	text-align: right;
+	top: 0;
+	right: 0;
+	width: 50%;
+	font-weight: bolder;
+	font-variant: small-caps;
+}
+
 .bg-body {
 background:white;
 }
