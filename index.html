@@ -10,57 +10,60 @@
 <body class="bg-body">
 
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark small border border-0 fixed-top">
-	  <div class="container p-0">
-		  <a class="navbar-brand" href="#">
-		  	<img src="img/logo-2.png" class="img-fluid d-block d-md-none float-left mr-1" width="30">
-		  	<h5 class="float-left mb-0" style="vertical-align: middle;line-height: 30px;">GOVPH</h5>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark small border border-0 fixed-top">
+  <div class="container p-0">
+	  <a class="navbar-brand" href="#">
+	  	<img id="govLogo" src="img/logo-2.png" class="img-fluid d-block d-md-none float-left mr-1" width="30">
+	  	<h5 class="float-left mb-0" id="govPH">GOVPH</h5>
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">The Province</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Transparency</a>
+	      </li>
+	     
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Agri-Tourism</a>
+	      </li>
 
-		  </a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-
-
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">The Province</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Transparency</a>
-		      </li>
-		     
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Agri-Tourism</a>
-		      </li>
-
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Current News</a>
-		      </li>
-		      
-		    </ul>
-		  </div>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Current News</a>
+	      </li>
+	    </ul>
 	  </div>
-	</nav>
+  </div>
+</nav>
 
 
 
-	<div class="d-none d-md-block" id="banner" style="margin-top: 56px;">
-		<div id="overlay"></div>
-		<div id="masthead" class="container p-0">
-			<img src="img/bagulin.png" style="width: 400px;margin-top: -1%;">
-		</div>
+<!-- Banner -->
+<div class="d-none d-md-block" id="banner">
+	<div id="overlay"></div>
+	<div id="masthead" class="container p-0">
+		<img src="img/bagulin.png">
 	</div>
+</div>
 
 
+<!-- Body -->
 <div id="body" class="container pt-3 pb-5 small">
-	<div class="row d-flex">
+	<div class="row">
+
+
 		<div class="col-md-9">
+			
 			<!-- Carousel -->
+			<h6 class="card-header text-white mb-3">Tourist Attractions</h6>
 			<div id="carouselExampleIndicators" class="carousel slide w-100" data-ride="carousel">
 			  <ol class="carousel-indicators">
 			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -73,57 +76,42 @@
 			    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
 			  </ol>
 			  <div class="carousel-inner">
-			    <!-- <div class="carousel-item active">
-			      <img class="d-block w-100" src="img/1.jfif" alt="First slide">
-			    </div> -->
-			    <!-- <div class="carousel-item active">
-			      <img class="d-block w-100" src="img/2.jfif" alt="Second slide">
-			    </div> -->
-			    
-				<div class="carousel-item active ">
-			      <img class="w-100" src="img/1.jpg">			     
-			    </div>
+					<div class="carousel-item active ">
+					  <img class="w-100" src="img/1.jpg">			     
+					</div>
 
 
-				<div class="carousel-item ">
-			      <img class="w-100" src="img/2.jpg">			     
-			    </div>
+					<div class="carousel-item ">
+					  <img class="w-100" src="img/2.jpg">			     
+					</div>
 
 
-				<div class="carousel-item ">
-			      <img class="w-100" src="img/3.jpg">			     
-			    </div>
+					<div class="carousel-item ">
+					  <img class="w-100" src="img/3.jpg">			     
+					</div>
 
 
-				<div class="carousel-item ">
-			      <img class="w-100" src="img/4.jpg">			     
-			    </div>
+					<div class="carousel-item ">
+					  <img class="w-100" src="img/4.jpg">			     
+					</div>
 
 
-				<div class="carousel-item ">
-			      <img class="w-100" src="img/5.jpg">			     
-			    </div>
+					<div class="carousel-item ">
+					  <img class="w-100" src="img/5.jpg">			     
+					</div>
 
 
-				<div class="carousel-item ">
-			      <img class="w-100" src="img/6.jpg">			     
-			    </div>
+					<div class="carousel-item ">
+					  <img class="w-100" src="img/6.jpg">			     
+					</div>
 
-			    <div class="carousel-item ">
-			      <img class="w-100" src="img/7.jpg">			     
-			    </div>
+					<div class="carousel-item ">
+					  <img class="w-100" src="img/7.jpg">			     
+					</div>
 
-			    <div class="carousel-item ">
-			      <img class="w-100" src="img/8.jpg">			     
-			    </div>
-
-			    <!-- <div class="carousel-item active ">
-			      <img class="w-100" src="img/3.jfif" alt="Third slide">
-    			  <div class="position-absolute w-100 h-100">	
-					<p class="position-absolute mt-1 mr-2">its name “Bagulin” was a coined from the word “Bago” and “Ulin.” it is said that during the early days, an igorot named Bago wanted to find out what the bluish crystal part of the earth that he saw from the uplands was. one day, he walked out towards the west and upon reaching the shores of the china sea, he found out that it was a body of salty water.</p>
-			      </div>
-			    </div>-->
-
+					<div class="carousel-item ">
+					  <img class="w-100" src="img/8.jpg">			     
+					</div>
 			  </div>
 			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -141,19 +129,22 @@
 					<h6 class="text-white mb-0">Officials</h6>
 				</div>
 
-				<div class="card-body border-left border-right border-top">
+				<div class="card-body">
 					<div class="row">
 						<div class="col-4">
-							<img class="rounded-circle d-block mx-auto" src="http://3rdpartyservicesofflorida.com/wp-content/uploads/2015/03/blank-profile.jpg" width="100">
+							<img class="rounded-circle d-block mx-auto" src="img/profile.jpeg" width="100">
 							<h6 class="text-center mt-2 mb-0">Vice Mayor</h6>
+							<p class="text-center"><i>"Some quotes"</i></p>
 						</div>
 						<div class="col-4">
-							<img class="rounded-circle d-block mx-auto" src="http://3rdpartyservicesofflorida.com/wp-content/uploads/2015/03/blank-profile.jpg" width="100">
+							<img class="rounded-circle d-block mx-auto" src="img/profile.jpeg" width="100">
 							<h6 class="text-center mt-2 mb-0">Mayor</h6>
+							<p class="text-center"><i>"Some quotes"</i></p>
 						</div>
 						<div class="col-4">
-							<img class="rounded-circle d-block mx-auto" src="http://3rdpartyservicesofflorida.com/wp-content/uploads/2015/03/blank-profile.jpg" width="100">
+							<img class="rounded-circle d-block mx-auto" src="img/profile.jpeg" width="100">
 							<h6 class="text-center mt-2 mb-0">Councilor</h6>
+							<p class="text-center"><i>"Some quotes"</i></p>
 						</div>
 					</div>
 				</div>
@@ -164,12 +155,19 @@
 				<div class="card-header">
 					<h6 class="text-white mb-0">Vision and Mission</h6>
 				</div>
-				<div class="card-body border-left border-right border-top">
-					<div class="col-lg-9">
-						<h5>MISSION</h5>
-						<p>To pursue socio-economic development thru the adoption of appropriate technologies, encourage citizen participation, sustain ecological balance, advocate peace and order, improve delivery of basic services for a better quality of life.</p>
-						<h5>VISION</h5>
-						<p>By year 2020, BAGULIN envisions to be a progressive and environmentally secured home of god loving and empowered citizens enjoying better quality of life</p>
+				<div class="card-body p-0">
+					<div class="col-lg-9 p-0">
+						<div class="circ" id="overlaps">
+							<p>MISSION</p>
+							<img src="img/rocket.png" id="rocks">
+							
+						</div>
+						<div class="circ m-0" id="overlaps2">
+							<p>VISION</p>
+							<img src="img/eye.png" id="eyes">
+						</div>
+		<!-- 				<img src="img/puzzle-r.png" class="puz">
+						<img src="img/puzzle-y.png" id="puz-y" class="puz"> -->
 					</div>
 				</div>
 			</div>
@@ -179,8 +177,8 @@
 				<div class="card-header">
 					<h6 class="text-white mb-0">History</h6>
 				</div>
-				<div class="card-body border-left border-right border-top">
-					<div class="col-lg-9">						
+				<div class="card-body">
+					<div class="col-lg-9" style="text-indent: 10px">						
 						<p>
 							Its name “Bagulin” was a coined from the word “Bago” and “Ulin.” It is said that during the early days, an Igorot named Bago wanted to find out what the bluish crystal part of the earth that he saw from the uplands was. One day, he walked out towards the west and upon reaching the shores of the China Sea, he found out that it was a body of salty water. While he was daydreaming along the shore, he saw a beautiful lass drowning in the waves. Used to swimming in the brooks and rivers, Bago immediately went to rescue the girl named Ulin. That was the first acquaintance of Bago with ulin the young and daring lowlander lass. They fell in love with each other and aircastles found their way in these young hearts. Plans for their wedding had been the subject of their whispers. Unfortunately, Bago was not welcomed by Ulin’s parents. However, love knew no bound. The two eloped and they settled in the place now called Bagulin. They were gifted with a son whom they called Bagulin, coined after their names.
 						</p>
@@ -188,90 +186,98 @@
 				</div>
 			</div>
 
+			<!-- Hymns -->
 			<div class="card pt-3 text-center">	
-			<ul class="nav nav-pills" id="pills-tab" role="tablist">
-			  <li class="nav-item">
-			    <a class="nav-link text-white mb-0 h6 active show" id="launion" data-toggle="pill" href="#pills-launion" role="tab" aria-controls="pills-home" aria-selected="true">La Union Hymn</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link text-white mb-0 h6" id="bagulin" data-toggle="pill" href="#pills-bagulin" role="tab" aria-controls="pills-profile" aria-selected="false">Bagulin Hymn</a>
-			  </li>
-			</ul>
-			<div class="tab-content" id="pills-tabContent">
-			  <div class="tab-pane fade p-4 active show" id="pills-launion" role="tabpanel" aria-labelledby="pills-launion-tab">
+				
+				<!-- Navpills -->
+				<ul class="nav nav-pills rounded" id="pills-tab" role="tablist">
+				  <li class="nav-item rounded">
+				    <a class="nav-link text-white mb-0 h6 active show rounded" id="launion" data-toggle="pill" href="#pills-launion" role="tab" aria-controls="pills-home" aria-selected="true">La Union Hymn</a>
+				  </li>
+				  <li class="nav-item rounded">
+				    <a class="nav-link text-white mb-0 h6 rounded" id="bagulin" data-toggle="pill" href="#pills-bagulin" role="tab" aria-controls="pills-profile" aria-selected="false">Bagulin Hymn</a>
+				  </li>
+				</ul>
+
+
+				<div class="tab-content" id="pills-tabContent">
+				  
+				  <!-- LaUnion Hymn -->
+				  <div class="tab-pane fade p-4 active show" id="pills-launion" role="tabpanel" aria-labelledby="pills-launion-tab">
 					<div class="col-lg-6 mx-auto">	
-						<h3 class="mb-3 font-weight-bold">La Union Hymn</h3>
-						<audio controls="" class="my-4 adp" id="one">
-						  <source src="mp3/launion.mp3" type="audio/mpeg">
-						</audio>
-						<br>				
-						Where is that place the one could find refuge<br>
-						Through wooded hills and verdant rolling fields<br>
-						Where is the place with bubbling brooks and rivers,<br>
-						Where is that place,<br>
-						Oh, where is that place?<br>
-						<br>
-						Where can one find birds singing all the day<br>
-						Where do the waves go on so silvery,<br>
-						Where does the sunset spread its golden beauty?<br>
-						Where is that place,<br>
-						La Union, my/our beloved.<br>
-						<br>
-						Refrain:<br>
-						God, bless the people of fair La Union<br>
-						Take us from harm and fill our hearts with love;<br>
-						Let no one seek to break the cord that binds us<br>
-						God, bless La Union<br>
-						My own home.<br>
-						<br>
-						Bridge:<br>
-						God, bless La Union<br>
-						Our own home!. . . . . .<br>
+						<h3 class="mb-3 font-weight-bold text-primary">La Union Hymn</h3>
+							<audio controls="" class="my-4 adp" id="one">
+								<source src="mp3/launion.mp3" type="audio/mpeg">
+							</audio> 
+							<p class="mb-0 ">Where is that place the one could find refuge
+							<p class="mb-0 ">Through wooded hills and verdant rolling fields
+							<p class="mb-0 ">Where is the place with bubbling brooks and rivers,
+							<p class="mb-0 ">Where is that place,
+							<p class="mb-3 ">Oh, where is that place?
+							
+							<p class="mb-0 ">Where can one find birds singing all the day
+							<p class="mb-0 ">Where do the waves go on so silvery,
+							<p class="mb-0 ">Where does the sunset spread its golden beauty?
+							<p class="mb-0 ">Where is that place,
+							<p class="mb-3 ">La Union, my/our beloved.
+							
+							<p class="mb-0 ">Refrain:
+							<p class="mb-0 ">God, bless the people of fair La Union
+							<p class="mb-0 ">Take us from harm and fill our hearts with love;
+							<p class="mb-0 ">Let no one seek to break the cord that binds us
+							<p class="mb-0 ">God, bless La Union
+							<p class="mb-3 ">My own home.
+							
+							<p class="mb-0 ">Bridge:
+							<p class="mb-0 ">God, bless La Union
+							<p class="mb-3 ">Our own home!. . . . . .
 					</div>
-			  </div>
-			  <div class="tab-pane fade p-4" id="pills-bagulin" role="tabpanel" aria-labelledby="pills-bagulin-tab">
-			  	<div class="col-lg-6 mx-auto">	
-			  		<h3 class="mb-3 font-weight-bold">Bagulin Hymn</h3>
-					<audio controls="" class="my-4" id="two">
-					  <source src="mp3/bagulin.mp3" type="audio/mpeg">
-					</audio>
-						<br>
-					  	Lyrics – Dr. Rogelio E. Tangalin Sr.<br>
-						Music – Renan N. Flores<br>
-						<br><br>
-						Bagulin, ili a nasadia<br>
-						Ili a nagtaudan puli a nakired<br>
-						Natubay iti anus ken ling-et<br>
-						Nangted sadia, sudi ken ngayed<br>
-						<br>
-						Bagulin, ili a dinto kalipatan<br>
-						Ili a pasantaken ken pakatayan<br>
-						Napnuan ngayed ken rimrimat<br>
-						Inkam daniwan ken kantaan<br>
-						<br>
-						Bagulin, sika ti taklin mi<br>
-						Sika ti amin, sikat’ bagnos<br>
-						Libnos karayan ken bambantay<br>
-						Isut’ ubbog panagdur-as, panagbiag<br>
-						<br>
-						Bagulin, sika ti taklin mi<br>
-						Sika ti amin, sikat’ bagnos<br>
-						Denggem kanta mi nagtaud kaun-gan<br>
-						Ta sadiam, O, Bagulin,<br>
-						<br>
-						Ili mi, saknap mi ti tungpal biag<br>
-						Ti tungpal biag (2x)<br>
+				  </div>
+
+				  <div class="tab-pane fade p-4" id="pills-bagulin" role="tabpanel" aria-labelledby="pills-bagulin-tab">
+				  	<div class="col-lg-6 mx-auto">	
+				  		<h3 class="mb-3 font-weight-bold text-primary">Bagulin Hymn</h3>
+							<audio controls="" class="my-4" id="two">
+								<source src="mp3/bagulin.mp3" type="audio/mpeg">
+							</audio>
+						  <p class="mb-0"><em>Lyrics – Dr. Rogelio E. Tangalin Sr.</em></p>
+							<p class="mb-3"><em>Music – Renan N. Flores</em><p>
+							
+							<p class="mb-0">Bagulin, ili a nasadia
+							<p class="mb-0">Ili a nagtaudan puli a nakired
+							<p class="mb-0">Natubay iti anus ken ling-et
+							<p class="mb-3">Nangted sadia, sudi ken ngayed
+							
+							<p class="mb-0">Bagulin, ili a dinto kalipatan
+							<p class="mb-0">Ili a pasantaken ken pakatayan
+							<p class="mb-0">Napnuan ngayed ken rimrimat
+							<p class="mb-3">Inkam daniwan ken kantaan
+							
+							<p class="mb-0">Bagulin, sika ti taklin mi
+							<p class="mb-0">Sika ti amin, sikat’ bagnos
+							<p class="mb-0">Libnos karayan ken bambantay
+							<p class="mb-3">Isut’ ubbog panagdur-as, panagbiag
+							
+							<p class="mb-0">Bagulin, sika ti taklin mi
+							<p class="mb-0">Sika ti amin, sikat’ bagnos
+							<p class="mb-0">Denggem kanta mi nagtaud kaun-gan
+							<p class="mb-3">Ta sadiam, O, Bagulin,
+							
+							<p class="mb-0">Ili mi, saknap mi ti tungpal biag
+							<p class="mb-0">Ti tungpal biag (2x)
+					</div>
+				  </div>
+
 				</div>
-			  </div>
 			</div>
-			</div>
+
 		</div><!--Left-->
 
 		<div class="col-md-3 pt-3 pt-lg-0">
 			<div class="sticky-top">
 				<!-- Anouncements -->
-				<div class="bg-light border-right border-left" id="anouncements">
-					<h6 class="p-2 bg-dark text-white text-center mb-0">Announcements</h6>
+				<div class="bg-light" id="anouncements">
+					<h6 class="p-2 bg-dark rounded text-white text-center mb-1">Announcements</h6>
 					<div class="list-group small">
 						<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
 						    <h6 class="mb-1">List group item heading</h6>
@@ -288,13 +294,13 @@
 
 				<!-- Quick Facts -->
 				<div class="bg-light mt-3">
-					<h6 class="p-2 bg-dark text-white text-center mb-0">Quick Facts</h6>
-					<div class="bg-dark text-white" id="facts">
-						<div class="p-5 text-center show">
+					<h6 class="p-2 bg-dark text-white text-center mb-0 rounded mb-3">Quick Facts</h6>
+					<div class="" id="facts">
+						<div class="p-5 text-center text-white show" style="background: url('img/samplebg.png');background-size: cover;text-shadow: 0px 0px 8px rgba(0,0,0,0.9)">
 							<h6>Land Area</h6>
 							<h4>10,733 hectares</h4>
 						</div>
-						<div class="p-5 text-center" style="display: none;">
+						<!-- <div class="p-5 text-center" style="display: none;">
 							<h6>Population</h6>
 							<h4>15,109</h4>
 						</div>
@@ -339,13 +345,70 @@
 						<div class="p-5 text-center" style="display: none;">
 							<h6>Market day</h6>
 							<h5>Fridays</h5>
-						</div>
+						</div> -->
 
 					</div>
 				</div>
 			</div>
 
 		</div><!--Right-->
+
+	</div>
+</div>
+
+
+<!-- Footer -->
+<div id="footers">
+	
+	<div class="container pt-4">
+		<div class="row">
+		<div class="col-md-3">
+			<h6 class="p-2 bg-dark text-white text-center mb-0 rounded">CONTACT INFORMATION</h6>
+			<p class="txt-group pt-2">
+				<strong>Address:</strong> Naguilian - Bagulin Rd, Bagulin, La Union
+				<br>
+				<strong>Telephone:</strong> 63 (072) 242-5550
+				<br>
+				<strong>Email Us:</strong> info@launion.gov.ph
+			</p>
+			<h5>&nbspEMERGENCY CONTACT:</h5>
+			<hr>
+			<p class="txt-group">
+				<strong>PDRRMO:</strong> (072) 607-8723 / 607-9244
+				<br>
+				<strong>Emergency Hotline:</strong> 911
+			</p>
+		</div>
+		<div class="col-md-3">
+			<h6 class="p-2 bg-dark text-white text-center mb-0 rounded">CONNECT WITH US</h6>
+			<p class="pt-2">
+
+				<a href="#">
+					<img src="img/fb.png" class="ft-ico">
+				</a>
+				<a href="#">
+					<img src="img/ig.png" class="ft-ico">
+				</a>
+				<a href="#">
+					<img src="img/twitter.png" class="ft-ico">
+				</a>
+				<a href="#">
+					<img src="img/yt.png" class="ft-ico">
+				</a>
+			</p>
+		</div>
+		<div class="col-md-3">
+			<h6 class="p-2 bg-dark text-white text-center mb-0 rounded">TERMS OF USE</h6>
+			<ul class="txt-group pl-4 pt-2">
+				<li>Disclaimer</li>
+				<li>Copyright</li>
+				<li>Sitemap</li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<h6 class="p-2 bg-dark text-white text-center mb-0 rounded">LA UNION LINK</h6>
+		</div>
+		</div>
 	</div>
 </div>
 
@@ -375,5 +438,6 @@
 		}, 3000);
 	});
 </script>
+
 </body>
 </html>

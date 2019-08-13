@@ -1,6 +1,159 @@
-@media (min-width: 576px) {
+/* Colors */
+.card-body,
+.tab-content,
+.bg-light {
+	background: white !important;
+}
+.bg-dark {
+	background: #8db600 !important; 
+}
+.text-dark {
+	color: #8db600 !important;
+}
+#anouncements .list-group-item h6,
+.text-primary {
+	color: #4e6600 !important;
+}
+.sticky-top {
+	top: 5em;
+}
+
+
+/* Navbar */
+#govLogo {
+	-moz-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+#govPH {
+	vertical-align: middle;
+	line-height: 30px;
+}
+#banner {
+	width: 100%;
+	line-height: 100px;
+	background: url('../img/bagulin.jpg');
+	background-size: cover;
+	background-position:center;
+	position: relative;
+	z-index: 1;
+	margin-top: 56px;
+}
+#masthead img {
+	width: 400px;
+	margin-top: -1%;
+}
+#overlay {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.42) 100%);
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+}
+#masthead {
+	position: relative;
+	z-index: 3;
+	vertical-align: middle;
+}
+
+/* Annoucements */
+#anouncements {
+	height: 315px;
+	overflow: auto;
+}
+#anouncements .list-group-item{
+	background: transparent;
+	border-color: transparent;
+	margin-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0,.1);	
+	border-radius: 0px;
+}
+#anouncements .list-group-item:last-child {
+	border-color: transparent;
+}
+
+/* Facts */
+#facts .list-group-item{
+	background: transparent;
+	padding: 5px;
+}
+
+/* Cards */
+.card {
+	background: transparent;
+	
+	border-radius: 0px !important;
+	border-color: transparent !important;
+}
+.card-header {
+	border-radius: 0.3rem !important;
+	margin-bottom: 5px;
+	padding: .5rem!important;
+	background:#8db600;
+	max-width: 25%;
+}
+
+/* NavPills */
+.nav-item{
+	max-width: 30% !important;
+}
+.nav-link{
+	background:#8db600;
+	border-color: transparent;
+	border-radius: 0.5rem!important;
+	margin-left: 5px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+   color: #fff;
+   background-color: #a8d806 !important;
+}
+
+/* IDK */
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+audio{
+	width:100%;
+	max-width: 100%;
+	height: 25px;
+}
+
+
+#footers{
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.42) 100%),url('../img/bagulin.jpg') no-repeat center center fixed;
+    opacity: 1;
+    border-style: hidden;
+    text-align: justify;
+    color: #fff;
+    margin-top: 20px;
+    background-size: cover;
+    height: 350px;
+}
+.txt-group{
+	font-size: 0.8rem;
+	line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+hr {
+	border: 0.5px solid white;
+}
+.ft-ico{
+	width: 15%;
+	height: auto;
+	margin-left:5px;
 
 }
+#addition{
+	height: 90px;
+}
+
+
+/* Small to Medium Screen */
 @media (max-width: 768px) {
 	#body.container {
 		margin-top: 56px;
@@ -26,8 +179,6 @@
 		font-size: 0.8rem;
 	}
 }
-
-
 .carousel-item {
 	top:0;
 	left:0;
@@ -42,119 +193,52 @@
 	font-weight: bolder;
 	font-variant: small-caps;
 }
-
-.bg-body {
-background:white;
+.circ{
+  position: relative;
+  display: inline-block;
+  width: 55%;
+  height: 0;
+  padding: 23% 0;
+  border-radius: 50%;
+  
+  /* Just making it pretty */
+  @shadow: rgba(0, 0, 0, .1);
+  @shadow-length: 4px;
+  -webkit-box-shadow: 0 @shadow-length 0 0 @shadow;
+          box-shadow: 0 @shadow-length 0 0 @shadow;
+  text-shadow: 0 @shadow-length 0 @shadow;
+  border: 15px solid green;
+  color: white;
+  font-family: Helvetica, Arial Black, sans;
+  font-size: 48px;
+  text-align: center;
+  color: green;	
+  font-weight: bold;
 }
-.bg-light {
-	background: #6c85d221 !important;
+#overlaps{
+	transform: translate(20%,20%);
 }
-.bg-dark {
-	background: #1B2545 !important; 
+#overlaps2{
+	transform: translate(80%,-20%);
 }
-.bg-primary {
-	background: #A52637 !important;
-}
-.text-primary {
-	color: #1B2545 !important;
-}
-
-.sticky-top { top: 5em; }
-
-
-#banner {
-	width: 100%;
-	line-height: 100px;
-	background: url('../img/bagulin.jpg');
-	background-size: cover;
-	background-position:center;
-	position: relative;
-	z-index: 1;
-}
-#overlay {
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3b3d42+0,737589+2,1b2545+100 */
-background: rgb(59,61,66); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(59,61,66,1) 0%, rgba(115,117,137,1) 2%, rgba(27,37,69,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(59,61,66,1) 0%,rgba(115,117,137,1) 2%,rgba(27,37,69,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(59,61,66,1) 0%,rgba(115,117,137,1) 2%,rgba(27,37,69,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3d42', endColorstr='#1b2545',GradientType=0 ); /* IE6-9 */
-
-
-
-	opacity: 0.7;
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	z-index: 2;
-}
-#masthead {
-	position: relative;
-	z-index: 3;
-	vertical-align: middle;
-}
-#anouncements {
-	height: 315px;
-	overflow: auto;
-}
-#anouncements .list-group-item{
-	background: transparent;
-	border-color: transparent;
-	//padding:0px 0px;
-	margin-bottom: 10px;
-	border-bottom: 1px solid rgba(0,0,0,.1);
-	color: #1B2545 !important;
-	border-radius: 0px;
-}
-#anouncements .list-group-item:last-child {
-	border-color: transparent;
-}
-#anouncements .list-group-item h6 {
-	color: #2c3c71;	
-}
-#facts .list-group-item{
-	background: transparent;
-	padding: 5px;
-}
-.card {
-	border-radius: 0px !important;
-	border-color: transparent;
-}
-.card-header {
-	border-radius: 0px !important;
-	border-color: transparent;
-	padding: .5rem!important;
-	background:#1B2545;
-	max-width: 25%;
-}
-.card-body, .tab-content {
-	background: #6c85d221;
-}
-.nav-item{
-	max-width: 30% !important;
+#rocks,#eyes{
+	width:30%;
 	
 }
-.nav-link{
-	background:#1B2545;
-	border-radius: 0px !important;
-	border-color: transparent;
+#rocks{
+	transform: translate(0%,-180%);
 }
-
-a{
-	text-decoration: none;
-	
-
+#eyes{
+	transform: translate(0%,-170%);
 }
-a:hover{
-	text-decoration: none;
+#puz-y{
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg) translate(23%,25%);
 }
-audio{
-	width:100%;
-	max-width: 100%;
-	height: 25px;
+.puz{
+	filter: drop-shadow(1px 1px 2px #000);
+	transition:filter 0.1s ease-in-out;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff;
-    background-color: #2c3c71 !important;
+.puz:hover{
+	filter: drop-shadow(2px 5px 5px #000);
 }
